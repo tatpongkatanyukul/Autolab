@@ -2,11 +2,18 @@
 
 [Autolab @ CoE](http://autolab.en.kku.ac.th/)
 
+## Process
+  * student.tar (student's submission)
+  * Makefile (script starting grader; name may appear different) 
+  * autograde.tar (grading tools; name may appear different)
+    * extracted to: submission
+
+
 ## Autograding
 
 Logic flow
   * autograde-Makefile -> submission/driver.sh
-  * @ Submission: driver.sh -> Makefile, grader_center.py
+  * @ submission: driver.sh -> Makefile, grader_center.py
   * grader_center.py
     * ```directive```: a filename associating **Student**-submitted Px to **Run** code, to **Grader** code (e.g., ```grading_policy1.py```) to test-case answers.
     * ```P['test']```: code to evaluate, e.g., **Student**'s Px.py or **Run** code. 
