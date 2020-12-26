@@ -32,3 +32,10 @@ Logic flow
       * **```subprocess.run([runtest_command, P['runtest'], runtest_suffix], ...)```**
       * ```runtest_command = "g++"```
       * ```runtest_suffix = "-o runtest.exe; ./runtest.exe"```
+
+
+## Grading Policies
+
+  (1) No partial credit
+  (2) partial credit
+  (3) numerical tolerance (see LCA autolab)
