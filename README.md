@@ -36,6 +36,6 @@ Logic flow
 
 ## Grading Policies
 
-  (1) No partial credit
-  (2) partial credit
-  (3) numerical tolerance (see LCA autolab)
+  * (1) No partial credit
+  * (2) partial credit
+  * (3) numerical tolerance (see LCA autolab)
