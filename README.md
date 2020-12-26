@@ -31,4 +31,4 @@ Logic flow
     * To seamless integrate it, I can use compound command, e.g., ```g++ aloha.cpp -o testrun.exe; ./testrun.exe```
       * **```subprocess.run([runtest_command, P['runtest'], runtest_suffix], ...)```**
       * ```runtest_command = "g++"```
-      * ```runtest_suffix = "-o runtest.exe; ./runtest.exe"
+      * ```runtest_suffix = "-o runtest.exe; ./runtest.exe"```
