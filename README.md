@@ -28,7 +28,7 @@ Logic flow
   * (1) ```mm_grader_center.py``` is modified to ```grader_center2.py```
   * (2) Key is at ```run_grader(...)```:
     * Only ***```subprocess.run([python_command], P['test'], ...)```*** has to be changed.
-    * To seamless integrate it, I can use compound command, e.g., ```g++ aloha.cpp -o testrun.exe; ./testrun.exe```
+    * To seamlessly integrate it, I can use compound command, e.g., ```g++ aloha.cpp -o testrun.exe; ./testrun.exe```
       * **```subprocess.run([runtest_command, P['runtest'], runtest_suffix], ...)```**
       * ```runtest_command = "g++"```
       * ```runtest_suffix = "-o runtest.exe; ./runtest.exe"```
