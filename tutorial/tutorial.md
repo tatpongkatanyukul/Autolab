@@ -126,7 +126,11 @@ Notice that ```Kubo``` on the first line is not print out by the program. It is 
         * student has to put this file along with other submission files.
     * _!CAUTION!_ Don't forget to arrange a mocking exam, so that students are familiar with it, before going for the real one.
   * ```verified = False``` renders GC into a regular mode. No verification is required.
-  
+
+#### Walk-Along Tutorial
+
+[Walk-Along Tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkalong.md)
+
 
 ## To-Do List
 
@@ -136,3 +140,4 @@ Notice that ```Kubo``` on the first line is not print out by the program. It is 
   * Add hint comments to grader policies, e.g., ```exact``` and ```parline``` with ```GAttrib: hint=P7.hnt```
     * After grading, if student did not get full score, show content in the hint file.
   * ```numgraders.py``` is too rough. It is rigid and hard to use. It should be fixed! But, I need time, starting from decision of its capabilities, e.g., ```3.45```, ```4mA```, ```3+j5V```, ```(Q3.1) 8.2```.
+  * Have ```Autolab``` mode clean up ```student``` folder automatically. (Low Priority!)
