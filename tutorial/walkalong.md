@@ -24,7 +24,24 @@ Have a good strategy on asking questions or posing problems. So that the answer 
 
 ## 2. Prepare the answers/reference outputs
 
+Example of the content of the input file
+```
+Kubo
+
+```
+
+Example of the content of the output file
+```
+Name: Hello, Kubo.
+
+```
+
+Notice that the reference output does not contain whatever a user types in (incluing a new line).
+
 ## 3. Write the grading configuration ```ans.txt```
+
+Example of the ```ans.txt```
+![ans.txt](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/anstxt.png)
 
 ## 4. Edit the GC
 
