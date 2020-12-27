@@ -6,8 +6,8 @@ Summarized steps
 * 2. Prepare the answers/reference outputs
   * Put each of them in answer files, e.g., ```Q1.ans```, ```P5c1.in```, ```P5c1.ans```
 * 3. Write the grading configuration ```ans.txt```
-* 4. Set the grader center (GC), i.e., ```grader_center4.py``` for Autolab
-  * ```MODE='Autolab'```
+* 4. Set the grader center (GC), i.e., edit ```grader_center4.py``` 
+  * ```MODE='Autolab'``` for running on Autolab
   * set ```verified = True``` for identity verification session, e.g., exam (or mocking one), otherwise ```verified = False```
 * 5. Pack all the autograder facilities
   * ***Make sure that the student folder is empty.***
