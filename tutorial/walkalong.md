@@ -12,6 +12,7 @@ Summarized steps
   * set ```verified = True``` for identity verification session, e.g., exam (or mocking one), otherwise ```verified = False```
 * 6. Pack all the autograder facilities
   * ***Make sure that the student folder is empty.***
+  * [Example of the tar file](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/stage1.tar)  
 * 7. Build and configure assessment
 * 8. Upload the packed tar file along with the ```Makefile``` into autograder
 * 9. Test submission
