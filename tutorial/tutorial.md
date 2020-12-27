@@ -40,3 +40,4 @@ The ```ans.txt``` specifies:
       * ```Test```: reports details, inc. submission output and reference answer. See Q2, Q3, P5, and P6 for examples
       * ```Deploy```: only reports scores.
     * Test Case: test-case input and reference output files in pair, each pair is delimited by ```,```. There can be as many test cases as please. See P5 for example.
+      * Each test case needs both input and ans files. For any problem not taking any input, use the ```dummy.in```.
