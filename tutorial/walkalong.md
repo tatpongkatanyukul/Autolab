@@ -2,15 +2,15 @@
 
 Summarized steps
 * 1. Write questions/problems
- * [Handout example](https://github.com/tatpongkatanyukul/Autolab/blob/main/handout.pdf)
+          * [Handout example](https://github.com/tatpongkatanyukul/Autolab/blob/main/handout.pdf)
 * 2. Prepare the answers/reference outputs
- * Put each of them in answer files, e.g., ```Q1.ans```, ```P5c1.in```, ```P5c1.ans```
+          * Put each of them in answer files, e.g., ```Q1.ans```, ```P5c1.in```, ```P5c1.ans```
 * 3. Write the grading configuration ```ans.txt```
 * 4. Set the grader center (GC), i.e., ```grader_center4.py``` for Autolab
- * ```MODE='Autolab'```
- * set ```verified = True``` for identity verification session, e.g., exam (or mocking one), otherwise ```verified = False```
+          * ```MODE='Autolab'```
+          * set ```verified = True``` for identity verification session, e.g., exam (or mocking one), otherwise ```verified = False```
 * 5. Pack all the autograder facilities
- * ***Make sure that the student folder is empty.***
+          * ***Make sure that the student folder is empty.***
 * 6. Build and configure assessment
 * 7. Upload the packed tar file along with the ```Makefile``` into autograder
 * 8. Test submission
