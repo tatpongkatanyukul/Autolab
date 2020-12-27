@@ -1,0 +1,7 @@
+all:
+	tar xvf autograde.tar
+	cp student.tar submission/student
+	(cd submission; ./driver.sh)
+
+clean:
+	rm -rf *~ submission
