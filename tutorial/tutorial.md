@@ -22,7 +22,10 @@ The ```ans.txt``` specifies:
     * Px: problem or question id, e.g., Q1, Q2, P3
     * Points: full score for the problem
     * Student: a submitted filename to which student has to comply 
-    * Run: a command to run to get a result; this allows flexible type of submission, e.g., text, cpp, py
+    * Run: a command to run to get a result; 
+      * This allows flexible type of submission, e.g., text, cpp, py.
+      * It may seem dangerous. But, recall that ```python P1.py``` (for python) versus ```g++ P1.cpp -o P1.exe; ./P1.exe``` (for C++) versus ```Q_aux1.exe P1.txt``` (for text answer).
+        * Check out older version (e.g., ```mm_grader_center.py```, ```grader_center2.py```), if uncomfortable with this.
     * Runtime: a maximal runtime allowed in second
     * Grader: a grader policy, i.e., exact, parline, numtol
       * exact: submission matching reference exactly gets full score, otherwise 0. See Q1 (on ```ans.txt```) for example.
