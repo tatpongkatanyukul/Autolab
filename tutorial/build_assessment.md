@@ -38,3 +38,4 @@ Write the name carefully. It cannot be changed.
   * Pick the right VM
   * Pick Autograder Makefile
   * Pick Autograder Tar
+  * See [Autograder: walk along](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkalong.md) for how to prepare autograder
