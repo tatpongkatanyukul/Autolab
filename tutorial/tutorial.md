@@ -125,3 +125,4 @@ Hello, Kubo.
   * Docker images for other courses, e.g., LCA (w/ SPICE), ANN (w/ numpy), Pattern Recognition (PR w/ numpy, cv2, pytorch)
   * Add hint comments to grader policies, e.g., ```exact``` and ```parline``` with ```GAttrib: hint=P7.hnt```
     * After grading, if student did not get full score, show content in the hint file.
+  * ```numgraders.py``` is too rough. It is rigid and hard to use. It should be fixed! But, I need time, starting from decision of its capabilities, e.g., ```3.45```, ```4mA```, ```3+j5V```, ```(Q3.1) 8.2```.
