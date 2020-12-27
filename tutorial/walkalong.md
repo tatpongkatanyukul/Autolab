@@ -17,13 +17,30 @@ Summarized steps
 
 ---
 
-## 1.
+## 1. Write questions/problems
 
-## 2.
+Questions or problems should be written with autograding (and its limitations) in mind.
+Have a good strategy on asking questions or posing problems. So that the answer or the output can be verified effectively.
 
-## 3.
+## 2. Prepare the answers/reference outputs
 
-## 4.
+## 3. Write the grading configuration ```ans.txt```
+
+## 4. Edit the GC
+
+Edit the GC to have ```MODE = 'Autolab'``` as shown below.
+
+```grader_center4.py```
+```Python
+:
+    MODE = 'Autolab'      # to deploy on Autolab server
+    # MODE = 'Test'           # to test a single submission
+    # MODE = 'Local Batch'  # to evaluate students' submission, when autolab fails
+
+    # verified = True # for exam/mocking exam
+    verified = False # for exercises/homework
+:
+```
 
 
 ## 5. Pack all the autograder facilities
