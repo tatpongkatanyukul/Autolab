@@ -90,7 +90,7 @@ For example, docker image ```py35_image``` refers to ```python3.5``` for python 
 ![anstxt for py35_image](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/anstxt_autolab.png)
 
 
-## 5. Pack all the autograder facilities
+## 6. Pack all the autograder facilities
 
 ***Make sure that the student folder is empty.*** Failure to do so would have given some students a free ride: a prior submission has files he/she did not submit.
 
@@ -111,3 +111,11 @@ Local Batch Model takes care of cleaning the student folder. It is safe in the l
 
 Pack the autograder
 ![Pack the autograder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/pack_autograder.png)
+
+## 7. Build and configure assessment
+
+
+## 8. Upload the packed tar file along with the ```Makefile``` into autograder
+
+
+## 9. Test submission
