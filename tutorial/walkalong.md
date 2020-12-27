@@ -38,10 +38,15 @@ Name: Hello, Kubo.
 
 Notice that the reference output does not contain whatever a user types in (incluing a new line).
 
+The best reference output can be obtained by taking the real output from a correct program solving the the underlying problem. Run it. Capture the output. Separate what a user types in from what a program prints out.
+
+
 ## 3. Write the grading configuration ```ans.txt```
 
 Example of the ```ans.txt```
 ![ans.txt](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/anstxt.png)
+
+See [field meanings](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/tutorial.md#anstxt).
 
 ## 4. Edit the GC
 
