@@ -39,3 +39,8 @@ Logic flow
   * (1) No partial credit
   * (2) partial credit
   * (3) numerical tolerance (see LCA autolab)
+  
+  
+## Tuturial
+
+[Autolab setup tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/tutorial.md)
