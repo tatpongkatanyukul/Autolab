@@ -12,7 +12,9 @@ Procedure
   * If both ```ans``` and ```rout``` look alike, check ```graders.py```
     * It may be trifle: missing typing or white space issues.
     * Write contents of ```ans``` and ```rout``` to files and open them with notepad++ with showing all characters to see the hidden characters.
+  * ```\r``` and ```\n``` are often the causes. 
 
+```graders.py```
 ```Python
        :
     # Check file in notepad++ with [view] > [show symbol] > [show all characcters]
