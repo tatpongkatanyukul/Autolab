@@ -41,3 +41,10 @@ The ```ans.txt``` specifies:
       * ```Deploy```: only reports scores.
     * Test Case: test-case input and reference output files in pair, each pair is delimited by ```,```. There can be as many test cases as please. See P5 for example.
       * Each test case needs both input and ans files. For any problem not taking any input, use the ```dummy.in```.
+
+
+## To Do
+
+  * Add case-sensitive/case-insensitive option for ```exact``` and ```parline``` grader policies.
+  * Docker image w/ ```python``` rather than ```python3.5```
+  * Docker images for other courses, e.g., LCA (w/ SPICE), ANN (w/ numpy), Pattern Recognition (PR w/ numpy, cv2, pytorch)
