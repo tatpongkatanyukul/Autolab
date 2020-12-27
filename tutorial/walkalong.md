@@ -114,6 +114,8 @@ Pack the autograder
 
 ## 7. Build and configure assessment
 
+[Build and configure assessment](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/build_assessment.md)
+
 
 ## 8. Upload the packed tar file along with the ```Makefile``` into autograder
 
