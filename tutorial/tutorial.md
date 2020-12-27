@@ -48,3 +48,5 @@ The ```ans.txt``` specifies:
   * Add case-sensitive/case-insensitive option for ```exact``` and ```parline``` grader policies.
   * Docker image w/ ```python``` rather than ```python3.5```
   * Docker images for other courses, e.g., LCA (w/ SPICE), ANN (w/ numpy), Pattern Recognition (PR w/ numpy, cv2, pytorch)
+  * Add hint comments to grader policies, e.g., ```exact``` and ```parline``` with ```GAttrib: hint=P7.hnt```
+    * After grading, if student did not get full score, show content in the hint file.
