@@ -10,6 +10,7 @@ Questions or Problems
   
 ### Autograder
 
+#### ```ans.txt```
 Grading configuration file (```ans.txt```):
 ![Write the ans.txt](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/anstxt.png)
 
@@ -42,6 +43,34 @@ The ```ans.txt``` specifies:
     * Test Case: test-case input and reference output files in pair, each pair is delimited by ```,```. There can be as many test cases as please. See P5 for example.
       * Each test case needs both input and ans files. For any problem not taking any input, use the ```dummy.in```.
 
+#### Test-case input file ```Px.in``` or ```Pxcx.in```
+
+#### Test-case reference output file ```Px.ans``` or ```Pxcx.ans```
+
+#### Running mode
+
+  * ```MODE='Test'```: this sets the grader center (GC) to do a single test on whatever in ```./student``` folder.
+    * It is a convenient way to test autograder, before deployment.
+    * It also comes in handy, when debugging the unexpected.
+  * ```MODE='Autolab'```: this sets GC ready for autolab.
+    * _!CAUTION!_ Don't forget to test submission through the Autolab system. There may be some discrepancy, e.g., windows vs unix, dependency or other issues.
+  * MODE='Local Batch': this sets GC to perform batch grading on a local computer. This mode is very handy, when Autolab server fails.
+  * _!CAUTION!_ Without Autolab and docker facilities, this mode is risky for our own computer. ***Better to set it up and run on a computer that does not have any important data too value to loose.***
+  
+#### Identity Verification
+
+  * ```verified = True``` puts GC into the verification mode. When student identity cannot be verified, GC refuses to grade.
+    * It is intended for the exam.
+    * It needs 
+      * ```codebook.txt``` tying e-mail, student id, and verification code together. 
+        * This has be prepared in the autograd tar pack.
+      * ```settings.json``` providing student id of the submission according to the log-in. 
+        * Autolab (as Ajahn Wasu has tweaked it) provides this.
+      * ```verify.txt``` providing student id and the verification code.
+        * student has to put this file along with other submission files.
+    * _!CAUTION!_ Don't forget to arrange a mocking exam, so that students are familiar with it, before going for the real one.
+  * ```verified = False``` renders GC into a regular mode. No verification is required.
+  
 
 ## To Do
 
