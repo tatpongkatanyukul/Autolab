@@ -65,7 +65,7 @@ Grading Policy is specified in ```ans.txt```.
 So far, we have:
   * ```exact```
   * ```parline``` (Best one, so far)
-  * ```numtol``` (not rough!!! See to-do list.)
+  * ```numtol``` (too rough!!! See to-do list.)
   
 A more flexible policy can be addressed through modification of ```graders.py```.
 It is advised to add a new policy, rather than modifying a workable existing one.
@@ -120,7 +120,7 @@ Hello, Kubo.
   * ```verified = False``` renders GC into a regular mode. No verification is required.
   
 
-## To Do
+## To-Do List
 
   * Add case-sensitive/case-insensitive option for ```exact``` and ```parline``` grader policies.
   * Docker image w/ ```python``` rather than ```python3.5```
