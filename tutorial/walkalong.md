@@ -117,5 +117,17 @@ Pack the autograder
 
 ## 8. Upload the packed tar file along with the ```Makefile``` into autograder
 
+  * [Example of the tar file](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/stage1.tar)
+  * [Example of the Makefile](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/autograde-Makefile)
+
+
 
 ## 9. Test submission
+
+[Example of test submission](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/good_student.tar)
+
+Check running progress by clicking on ```job```
+![Job detail](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/Autolab9_jobdetail.png)
+
+See the score report
+![Score report](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/Autolab10_scores.png)
