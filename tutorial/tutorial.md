@@ -2,11 +2,11 @@
 
 ---
 
-## Example
+### Naming Convention
 
 Questions or Problems
-  * Question is meant for something student answered in a text file
-  * Problem is meant for a program to be submitted
+  * Question is meant for something student answered in a text file, e.g., Q1, Q2, and Q3.
+  * Problem is meant for a program to be submitted, e.g., P4, P5, and P6.
   
 ### Autograder
 
@@ -42,7 +42,8 @@ The ```ans.txt``` specifies:
       * ```Deploy```: only reports scores.
     * Test Case: test-case input and reference output files in pair, each pair is delimited by ```,```. There can be as many test cases as please. See P5 for example.
       * Each test case needs both input and ans files. For any problem not taking any input, use the ```dummy.in```.
-
+  * ```#``` as the first character in the line indicating the comment-out line. E.g., P7 is commented out. There will be ***no grading*** for P7.
+  
 #### Grading Policy
 
 Grading Policy is specified in ```ans.txt```.
