@@ -47,9 +47,10 @@ The ```ans.txt``` specifies:
     * Grader: a grader policy, i.e., exact, parline, numtol
       * exact: submission matching reference exactly gets full score, otherwise 0. See Q1 (on ```ans.txt```) for example.
       * parline: partial credit by a number of lines matched to reference lines. Each line must match exactly.
+        * recommended option (as Dec 27th, 2020)
       * numtol: partial credit by a number of lines matched to reference lines. 
         * Each line must comply to a designated format and numeric answer can be tolerated with the specified tolerance (through ```GAttrib```)
-        * ```numtol``` is too rough. See to-do list.
+        * _!CAUTION!_ ```numtol``` is too rough. See to-do list.
     * GAttrib: attributes for grader, e.g., when using ```numtol```, GAttrib specifies tolerance. See Q3 on the ```ans.txt``` image.
     * Report: Grader's reporting mode
       * ```Test```: reports details, inc. submission output and reference answer. See Q2, Q3, P5, and P6 for examples
