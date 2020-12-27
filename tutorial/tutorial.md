@@ -86,12 +86,20 @@ Kubo
 #### Test-case reference output file ```Px.ans``` or ```Pxcx.ans```
 
 Each file has reference output text in its final stage (if it's meant for a program taking multiple inputs).
+_!CAUTION!_ Exclue whatever user type in out off the reference answer file.
 
 Example ```P5c1.ans```:
+```
+Name: Hello, Kubo.
+```
+
+What you might see on the screen:
 ```
 Name: Kubo
 Hello, Kubo.
 ```
+
+Notice that ```Kubo``` on the first line is not print out by the program. It is typed in by a user (including a new line--- as a user presses 'enter')
 
 **PS.** GC (through ```graders.py```) has prepared for discrepancy between Unix and Windows, such as a new line: ```\r```, ```\r\n```, ```\n```. But, it is always safe to double check.
 
