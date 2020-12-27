@@ -43,9 +43,41 @@ The ```ans.txt``` specifies:
     * Test Case: test-case input and reference output files in pair, each pair is delimited by ```,```. There can be as many test cases as please. See P5 for example.
       * Each test case needs both input and ans files. For any problem not taking any input, use the ```dummy.in```.
 
+#### Grading Policy
+
+Grading Policy is specified in ```ans.txt```.
+So far, we have:
+  * ```exact```
+  * ```parline```
+  * ```numtol```
+  
+A more flexible policy can be addressed through modification of ```graders.py```.
+It is advised to add a new policy, rather than modifying a workable existing one.
+
 #### Test-case input file ```Px.in``` or ```Pxcx.in```
 
+Each file has each input text as it would be typed in by a user.
+
+_!CAUTION!_ A ***new line*** is needed to finish the entry.
+Multiple entries are also possible.
+
+Example ```P5c1.in```:
+```
+Kubo
+
+```
+
 #### Test-case reference output file ```Px.ans``` or ```Pxcx.ans```
+
+Each file has reference output text in its final stage (if it's meant for a program taking multiple inputs).
+
+Example ```P5c1.ans```:
+```
+Name: Kubo
+Hello, Kubo.
+```
+
+**PS.** GC (through ```graders.py```) has prepared for discrepancy between Unix and Windows, such as a new line: ```\r```, ```\r\n```, ```\n```. But, it is always safe to double check.
 
 #### Running mode
 
