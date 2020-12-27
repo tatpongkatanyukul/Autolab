@@ -56,6 +56,9 @@ Test run GC on a mocking submission.
   * 2. Run GC in ```Test``` mode
   * 3. Examine the outcomes
 
+Put mocking submission in the ```student``` folder
+![working student folder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/workable_student_fold.png)
+
 Example of the final outcome
 ```
 {"scores": {"Q1": 5, "Q2": 5, "Q3": 8, "P4": 10, "P5": 20, "P6": 0, "P8": 10},"scoreboard":[5, 5, 8, 10, 20, 0, 10, 58]}
@@ -82,10 +85,16 @@ Edit the GC to have ```MODE = 'Autolab'``` as shown below.
 :
 ```
 
+Also, make sure that all discrepancies between the local machine and Autolab server have been properly handled.
+For example, docker image ```py35_image``` refers to ```python3.5``` for python interpreter. Therefore, if using this ```py35_image```, all calls to ```python``` have to be changed properly.
+![anstxt for py35_image](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/anstxt_autolab.png)
+
 
 ## 5. Pack all the autograder facilities
 
 ***Make sure that the student folder is empty.*** Failure to do so would have given some students a free ride: a prior submission has files he/she did not submit.
+
+![Fresh student folder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/fresh_student_folder.png)
 
 Local Batch Model takes care of cleaning the student folder. It is safe in the local batch mode.
 ```grader_center4.py```
@@ -100,3 +109,5 @@ Local Batch Model takes care of cleaning the student folder. It is safe in the l
                       :
 ```
 
+Pack the autograder
+![Pack the autograder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/pack_autograder.png)
