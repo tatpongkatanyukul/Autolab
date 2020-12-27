@@ -26,6 +26,9 @@ The ```ans.txt``` specifies:
       * This allows flexible type of submission, e.g., text, cpp, py.
       * It may seem dangerous. But, recall that ```python P1.py``` (for python) versus ```g++ P1.cpp -o P1.exe; ./P1.exe``` (for C++) versus ```Q_aux1.exe P1.txt``` (for text answer).
         * Check out older version (e.g., ```mm_grader_center.py```, ```grader_center2.py```), if uncomfortable with this.
+        
+      * _!CAUTION!_ Command inconsistency between local machine and autolab server.
+        * E.g., ```py35_image``` uses ```python3.5 P1.py```. Also, ```Q_aux1.exe``` compiled on Windows does not work on Unix.
     * Runtime: a maximal runtime allowed in second
     * Grader: a grader policy, i.e., exact, parline, numtol
       * exact: submission matching reference exactly gets full score, otherwise 0. See Q1 (on ```ans.txt```) for example.
