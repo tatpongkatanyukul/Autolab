@@ -1,4 +1,4 @@
-# Tutorial
+# Tutorials
 
   * [General tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/tutorial.md)
   * [How to build an assessment](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/build_assessment.md)
