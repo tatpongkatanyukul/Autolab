@@ -10,13 +10,17 @@ Questions or Problems
   
 ### Autograder
 
-__Note__: Autograder works on the output that a test subject gives out to the standard output, e.g., screen.
+
+#### Having the right strategy is the key
+
+Autograder works on the output that a test subject gives out to the standard output, e.g., screen.
 Therefore, it requires a proper strategy to have it work as it should
   * Testing function, class, or any kind of module should be tested through the ``auxiliary file''.
     * E.g., instead of running student's ```P1.py```, have ```P1_aux.py``` to call a function under test and check out the output ```P1_aux.py``` produces.
   * Similearly, testing operation on files should be tested through the ``auxiliary file''.
     * E.g., instead of running student's ```P2.py```, have ```P2_aux.py``` to call ```P2.py``` and then read the file, which as supposed to be prepared by ```P2.py``` and print it out. Check out the output ```P2_aux.py``` produces.
 
+Our autograder is flexible such that it can take a submission (and check if it is there), but run another file to test it. See ```ans.txt``` section for details.
 
 
 #### ```ans.txt```
