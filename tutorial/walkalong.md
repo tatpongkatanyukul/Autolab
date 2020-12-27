@@ -116,13 +116,21 @@ Pack the autograder
 
 [Build and configure assessment](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/build_assessment.md)
 
+Configure
+  * Handin
+  * Problems
+  * Basic: add Autograder
 
 ## 8. Upload the packed tar file along with the ```Makefile``` into autograder
 
   * [Example of the tar file](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/stage1.tar)
   * [Example of the Makefile](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/autograde-Makefile)
 
+![Add Autograder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/Autolab8_autograder.png)
 
+  * Pick the right VM
+  * Pick Autograder Makefile
+  * Pick Autograder Tar
 
 ## 9. Test submission
 
