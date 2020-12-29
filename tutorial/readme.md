@@ -5,4 +5,4 @@
   * [Autograder: walk along](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkalong.md)
   * [How to debug the grading](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/debug_grading.md)
   * [How to create a course]
-  * [How to add students]
+  * [How to add students](https://github.com/tatpongkatanyukul/Autolab/tree/main/tutorial/AddStudents)
