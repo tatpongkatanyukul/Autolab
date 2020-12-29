@@ -13,7 +13,7 @@ This tutorial gives a short example of how to add students to a course.
 ### Import Roster
 ![Import Roster](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/AddStudents/AddStudent2_ImportRoster.png)
 
-### Prepare Poster File
+### Prepare Roster File
 ![Roster File](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/AddStudents/AddStudent3_rosterFile.png)
 
 ### Have students in
