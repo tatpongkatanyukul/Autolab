@@ -4,6 +4,16 @@ This tutorial gives a short example of how to add students to a course.
 
 ## Batch Mode
 
+Procedure
+  * Get to the ```manage course```
+  * Then, click ```manage students```
+  * Click ```Import Roster```
+  * Prepare a roster file (csv with comma delimiters)
+    * _!CAUTION!_ the file cannot contains thai. So all thai names have to be removed or changed.
+      * Students can correct their names later
+  * Select the roster file
+  * Check if students are added to the course
+
 ### Get to the manage course page
 ![Manage Course](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/AddStudents/AddStudent0_MangeCourse.png)
 
