@@ -127,9 +127,9 @@ Notice that ```Kubo``` on the first line is not print out by the program. It is 
     * _!CAUTION!_ Don't forget to arrange a mocking exam, so that students are familiar with it, before going for the real one.
   * ```verified = False``` renders GC into a regular mode. No verification is required.
 
-#### Walk-Along Tutorial
+#### Walkthrough Tutorial
 
-[Walk-Along Tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkalong.md)
+[Walkthrough Tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkalong.md)
 
 
 ## To-Do List
