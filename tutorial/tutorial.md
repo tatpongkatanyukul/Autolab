@@ -2,9 +2,9 @@
 
 ---
 ## General idea of Autograder
-  * Autolab lets us do our own autograder
-  * We have to write our own autograder (or borrow it from someone's else, like Caveman's)
-  * In Autolab Autograder Basic page, we have to speficy
+  * First, Autolab lets us do our own autograder.
+  * We have to write our own autograder (or borrow it from someone's else, like Caveman's).
+  * In Autolab Autograder Basic page, we have to speficy:
     * VM image: this is the docker image we want to run our autograder code on.
       * E.g., if our code is python 3.5, we need to choose ```py35_image```, which is a docker image having python 3.5 (along with basic unix os---they call it Alpine, I'm not sure and I don't really care, as along as it works with my autograder---).
     * student submission: this will be the target filename of student's submission
