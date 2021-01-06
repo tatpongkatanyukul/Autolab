@@ -6,7 +6,7 @@
 
 # Autograder
 
-  * [Autograder: walk along](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkalong.md)
+  * [Autograder: walkthrough](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/walkthrough.md)
   * [How to debug the grading](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/debug_grading.md)
   * [General autograder tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/tutorial.md)
   * [How to build a VM]
