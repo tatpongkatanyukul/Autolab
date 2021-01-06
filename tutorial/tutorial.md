@@ -27,7 +27,7 @@ Notice that (1) we have to repeat the scores again on scoreboard; and (2) we hav
     * The working idea is that we start a real grader program in our ```Autograder-makefile```.
       * a real grader "knows" that submission name is, for example, ```student.tar```.
       * a real grader "have" other things it needs in Autograder.tar, which I usually go by the name of ```submission.tar```.
-        * other things a real grader needs may include a test-case input and corresponding a correct answer/reference output.
+        * other things a real grader needs may include pairs of test-case inputa and corresponding correct answers/reference outputs.
 
 ---
 ## Autograder (Caveman's update Dec 27th, 2020)
