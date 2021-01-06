@@ -11,7 +11,7 @@
       * whatever filename student submits, it will be renamed to this target filename
       * E.g., if we specify "student.tar", the file a student submitted will be renamed to "student.tar". So that, our autograder code does not have to deal with this diversity hassle, whatever its original name is (or whoseever it is) it will be called "student.tar".
     * Autograder-makefile: this is the file that Autolab will run. So, whatever we want the autograder to do it has to start here.
-    * Autograder.tar: this is an accessory file. The idea is that it is a tar package, so that whatever else you want you can pack it in.
+    * Autograder.tar: this is an accessory file. The idea is that it is a tar package, so that whatever else you want you can pack them in.
   * Autolab does not care about how our autograder runs (or grading policy). It only takes whatever scores we report out.
   * Our autograder has to report the score as the last line of the standard print out in format, as the following example:
   ```
