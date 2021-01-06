@@ -21,7 +21,7 @@ This example shows that our autograder reports scores of 2 problems: a student g
 The ```scoreboard``` part is for scoreboard option that we check on the basic autograder page.
 Notice that (1) we have to repeat the scores again on scoreboard; and (2) we have to provide the total scores for the scoreboard, but not for the (main) scores.
   * This print out has to be on ***THE LAST LINE***. We cannot print out anything after this, otherwise autolab would not get the scores.
-  * ***Scores of all problems have to integer***. Failing to do so will turn it to 0. For example, ```{"scores": {"P1": 9.5, "P2": 8}}``` will give a student 0 on P1 and 8 on P2.
+  * ***Scores of all problems have to be integer***. Failing to do so will turn it to 0. For example, ```{"scores": {"P1": 9.5, "P2": 8}}``` will give a student 0 on P1 and 8 on P2.
 
   * That's it. Autolab works just like that. Here's how we can work with Autolab:
     * The working idea is that we start a real grader program in our ```Autograder-makefile```.
