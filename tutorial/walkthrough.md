@@ -1,4 +1,4 @@
-# Walk-Along Tutorial
+# Walkthrough Tutorial
 
 Summarized steps
 * 1. Write questions/problems
