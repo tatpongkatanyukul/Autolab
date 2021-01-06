@@ -1,6 +1,37 @@
 # Tutorial
 
 ---
+## General idea of Autograder
+  * Autolab lets us do our own autograder
+  * We have to write our own autograder (or borrow it from someone's else, like Caveman's)
+  * In Autolab Autograder Basic page, we have to speficy
+    * VM image: this is the docker image we want to run our autograder code on.
+      * E.g., if our code is python 3.5, we need to choose ```py35_image```, which is a docker image having python 3.5 (along with basic unix os---they call it Alpine, I'm not sure and I don't really care, as along as it works with my autograder---).
+    * student submission: this will be the target filename of student's submission
+      * whatever filename student submits, it will be renamed to this target filename
+      * E.g., if we specify "student.tar", the file a student submitted will be renamed to "student.tar". So that, our autograder code does not have to deal with this diversity hassle, whatever its original name is (or whoseever it is) it will be called "student.tar".
+    * Autograder-makefile: this is the file that Autolab will run. So, whatever we want the autograder to do it has to start here.
+    * Autograder.tar: this is an accessory file. The idea is that it is a tar package, so that whatever else you want you can pack it in.
+  * Autolab does not care about how our autograder runs (or grading policy). It only takes whatever scores we report out.
+  * Our autograder has to report the score as the last line of the standard print out in format, as the following example:
+  ```
+  {"scores": {"P1": 10, "P2": 8}, "scoreboard":[10, 8, 18]}
+  ```
+This example shows that our autograder reports scores of 2 problems: a student gets 10 points on P1 and 8 points on P2.
+The ```scoreboard``` part is for scoreboard option that we check on the basic autograder page.
+Notice that (1) we have to repeat the scores again on scoreboard; and (2) we have to provide the total scores for the scoreboard, but not for the (main) scores.
+    * This print out has to be on ***THE LAST LINE***. We cannot print out anything after this, otherwise autolab would not get the scores.
+    * ***Scores of all problems have to integer***. Failing to do so will turn it to 0. For example, ```{"scores": {"P1": 9.5, "P2": 8}}``` will give a student 0 on P1 and 8 on P2.
+  * That's it.
+    * The working idea is that we start a real grader program in our ```Autograder-makefile```.
+      * a real grader "knows" that submission name is, for example, ```student.tar```.
+      * a real grader "have" other things it needs in Autograder.tar, which I usually go by the name of ```submission.tar```.
+        * other things a real grader needs may include a test-case input and corresponding a correct answer/reference output.
+
+---
+## Autograder (Caveman's update Dec 27th, 2020)
+
+This section provides an explanation on [Caveman](https://github.com/tatpongkatanyukul/tidbits/blob/main/caveman1.jpg)'s autograder (version Dec 27th, 2020).
 
 ### Naming Convention
 
