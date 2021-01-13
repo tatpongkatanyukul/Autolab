@@ -50,6 +50,20 @@ Logic flow
 ## To-Do List
   * (1) Have Pre-problem run script. So that, C++ can be compiled only once.
   * (2) Have Post-problem run script. So that, all p.exe gets cleaned up.
+    * It looks like that I was preparing for this.
+    
+  ```run_grader(directive, runtest_prefix, runtest_suffix, paths)```
+
+```
+   run_complete, rout = \
+      cmd(runtest_prefix,
+          P['runtest'],
+          runtest_suffix,
+          istream, float(P['runtime']))
+```                        
+                        
+    * No, it's something else. It's just append to the command, which will be run at the same time. 
+
+  
   * (3) Have a grading policy with hint
 
-```run_grader(directive, runtest_prefix, runtest_suffix, paths)```
