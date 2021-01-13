@@ -32,7 +32,7 @@ Notice that (1) we have to repeat the scores again on scoreboard; and (2) we hav
 ---
 ## Autograder (Caveman's update Dec 27th, 2020)
 
-This section provides an explanation on [Caveman](https://github.com/tatpongkatanyukul/tidbits/blob/main/caveman1.jpg)'s autograder (version Dec 27th, 2020).
+This section provides an explanation on Caveman's autograder (version Dec 27th, 2020).
 
 ### Naming Convention
 
