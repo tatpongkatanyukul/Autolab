@@ -61,7 +61,8 @@ Logic flow
           runtest_suffix,
           istream, float(P['runtime']))
 ```                        
-    * No, it's something else. It's just append to the command, which will be run at the same time. 
+    
+No, it's something else. It's just append to the command, which will be run at the same time. 
 
   
   * (3) Have a grading policy with hint
