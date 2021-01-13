@@ -45,3 +45,9 @@ Logic flow
   * [Autolab how to create an exercise (aka assessment)](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/build_assessment.md)
   * [Autograder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/tutorial.md)
   * [Autolab tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/readme.md)
+
+
+## To-Do List
+  * (1) Have Pre-problem run script. So that, C++ can be compiled only once.
+  * (2) Have Post-problem run script. So that, all p.exe gets cleaned up.
+  * (3) Have a grading policy with hint
