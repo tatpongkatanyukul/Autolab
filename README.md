@@ -51,3 +51,5 @@ Logic flow
   * (1) Have Pre-problem run script. So that, C++ can be compiled only once.
   * (2) Have Post-problem run script. So that, all p.exe gets cleaned up.
   * (3) Have a grading policy with hint
+
+```run_grader(directive, runtest_prefix, runtest_suffix, paths)```
