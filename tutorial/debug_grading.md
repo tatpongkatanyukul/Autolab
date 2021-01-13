@@ -10,7 +10,7 @@ Procedure
     * ```ans``` is a reference text
     * ```rout``` is a submission output
   * If both ```ans``` and ```rout``` look alike, check ```graders.py```
-    * It may be trifle: missing typing or white space issues.
+    * It may be trifle: miss a character, typo or white space issues. (Sometimes, unseen character comes up.)
     * Write contents of ```ans``` and ```rout``` to files and open them with notepad++ with showing all characters to see the hidden characters.
   * ```\r``` and ```\n``` are often the causes. 
 
