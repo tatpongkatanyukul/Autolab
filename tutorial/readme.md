@@ -3,6 +3,7 @@
   * [How to create a course]
   * [How to build an assessment](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/build_assessment.md)
   * [How to add students](https://github.com/tatpongkatanyukul/Autolab/tree/main/tutorial/AddStudents)
+  * [Autolab server](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/readme.md)
 
 # Autograder
 
