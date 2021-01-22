@@ -45,6 +45,7 @@ Logic flow
   * [Autolab how to create an exercise (aka assessment)](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/build_assessment.md)
   * [Autograder](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/tutorial.md)
   * [Autolab tutorial](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/readme.md)
+  * [Autolab server](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/readme.md)
 
 
 ## To-Do List
