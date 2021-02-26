@@ -5,8 +5,8 @@ For LCA class (option: Grader = ```numtol2``` in ```ans.cfg```)
   * better reveal wrong format without giving out the correct calculation
 
 Changes
-  * ```graders.py``` (add numtol2 option)
-  * ```policy2021.py``` (new file, implementing numtol2, i.e., ```numtol_policy2``` function)
+  * ```graders.py``` (add ```numtol2``` option)
+  * ```policy2021.py``` (new file, implementing ```numtol2```, i.e., ```numtol_policy2``` function)
 
 Examples
   * Given ref: ```-18 V```, both student's answer: ```-18 V``` and ```- 18 V``` are correct.
