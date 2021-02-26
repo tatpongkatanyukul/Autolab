@@ -45,4 +45,29 @@ See [test](https://autolab.en.kku.ac.th/courses/Test/assessments/numtol2)
 For CPG class
   * better ```Test``` reporting mode of ```numtol```
     * That is having a marker indicating where the first difference is found
+
+Changes
+  * ```base_policies.py``` and ```numgraders.py```
+
+Examples
+  * Different alphabet (Wrong calculation)
+```
+numtol_policy: * reference : Enter 2 integers: z = 0.5625
+numtol_policy: * student   : Enter 2 integers: z = 0
+numtol_policy: * difference: ______________________#
+```
+  * Different token (Wrong logic)
+```
+numtol_policy: * reference : Height: Cannot play
+numtol_policy: * student   : Height: Can not play
+numtol_policy: * difference: ________###
+```
+
+  * Different alphabet (Off format)
+```
+numtol_policy: * reference : Tmp: Doctor!
+numtol_policy: * student   : Tmp: Doctor
+numtol_policy: * difference: ___________#
+```
+
 See [CPG 2021 MTE](https://autolab.en.kku.ac.th/courses/001203-s20/assessments/e1)
