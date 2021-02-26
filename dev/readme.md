@@ -39,3 +39,10 @@ Examples
 
 Download [tar](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograde210226a.tar)
 See [test](https://autolab.en.kku.ac.th/courses/Test/assessments/numtol2)
+
+
+# Feb 17th, 2021
+For CPG class
+  * better ```Test``` reporting mode of ```numtol```
+    * That is having a marker indicating where the first difference is found
+See [CPG 2021 MTE](https://autolab.en.kku.ac.th/courses/001203-s20/assessments/e1)
