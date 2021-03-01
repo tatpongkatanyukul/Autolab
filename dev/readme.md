@@ -5,7 +5,7 @@ For LCA class (option: Grader = ```numtol2``` in ```ans.cfg```)
   * better reveal wrong format without giving out the correct calculation
 
 Changes
-  * ```graders.py``` (add ```numtol2``` option)
+  * ```graders.py``` (add ```numtol2``` option; have ```policy == 'external'``` accommodate other reporting modes (```!= 'Deploy'```)
   * ```policy2021.py``` (new file, implementing ```numtol2```, i.e., ```numtol_policy2``` function)
 
 Examples
@@ -37,7 +37,7 @@ Examples
       _____###
       ```
 
-Download [tar](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograde210226a.tar)
+Download [tar](https://github.com/tatpongkatanyukul/Autolab/blob/main/dev/autogradeHidNum.tar)
 See [Test numtol2](https://autolab.en.kku.ac.th/courses/Test/assessments/numtol2), [EN001203-s20 A000](https://autolab.en.kku.ac.th/courses/001203-s20/assessments/a000)
 
 
