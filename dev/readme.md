@@ -38,7 +38,7 @@ Examples
       ```
 
 Download [tar](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograde210226a.tar)
-See [Test numtol2](https://autolab.en.kku.ac.th/courses/Test/assessments/numtol2)
+See [Test numtol2](https://autolab.en.kku.ac.th/courses/Test/assessments/numtol2), [EN001203-s20 A000](https://autolab.en.kku.ac.th/courses/001203-s20/assessments/a000)
 
 
 # Feb 17th, 2021
