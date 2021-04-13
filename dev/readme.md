@@ -3,7 +3,7 @@
 
 Key components:  
   * ```grader_center4```: (```autograde-makefile``` -> ```driver.sh``` -> ```grader_center4.py```) starting point of the python autograder
-    * It is an adapter for ```runtest_tool.run_grader(...)```, i.e., prepare proper directive for both autolab run or local batch run and acts as autolab management (going through every student's submission) for local batch run
+    * It is actually more like a **dispatcher**. It is an adapter for ```runtest_tool.run_grader(...)```, i.e., prepare proper directive for both autolab run or local batch run and acts as autolab management (going through every student's submission) for local batch run
   * ```runtest_tool.run_grader(...)```: a testing manager to have every problem tested as specified in the directive
     * It reads the directive file (```ans.cfg```), builds ```Grading_Table```, goes through each problem (i.e., for each test case, runs student's python code, gets student's output, asks grader for scores, and combines test-case scores for the problem), reports scores of all problems
       * It was originally designed for python, then the entire suite was extended to handle C/C++. Thus, the run testing may be re-located to the external policy.
