@@ -3,8 +3,14 @@
 
 Key components:  
   * ```grader_center4```: (```autograde-makefile``` -> ```driver.sh``` -> ```grader_center4.py```) starting point of the python autograder
-    * adapter for ```runtest_tool.run_grader(...)```, i.e., prepare proper directive for both autolab run or local batch run and acts as autolab management (going through every student's submission) for local batch run
-  * ```runtest_tool.run_grader(...)```
+    * It is an adapter for ```runtest_tool.run_grader(...)```, i.e., prepare proper directive for both autolab run or local batch run and acts as autolab management (going through every student's submission) for local batch run
+  * ```runtest_tool.run_grader(...)```: a testing manager to have every problem tested as specified in the directive
+    * It reads the directive file (```ans.cfg```), builds ```Grading_Table```, goes through each problem (i.e., for each test case, runs student's python code, gets student's output, asks grader for scores, and combines test-case scores for the problem), reports scores of all problems
+      * It was originally designed for python, then the entire suite was extended to handle C/C++. Thus, the run testing may be re-located to the external policy.
+  * ```graders.grading```: a grading judge
+    * It compares student's output to the reference and grade the output according to the specified policy.
+    * Regular policies, ```exact``` (full score or nothing), ```parline``` (partial credit by line), and ```numtol2``` (partial credit by line with numerical tokens evaluated on tolerance), should work fine for general cases.
+    * The policy ```external``` allows the entire process of run testing and grading to be passed on to the specified external policy, which can arbitrarily added. The ```graders.grading``` simply passes everything (necessary) to the external file through running arguments along with problem score and reporting mode. 
 
 # Feb 26th, 2021. (dev/2021e)
 For LCA class (option: Grader = ```numtol2``` in ```ans.cfg```)
