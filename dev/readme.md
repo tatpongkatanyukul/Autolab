@@ -1,6 +1,11 @@
 # Apr 13th, 2021. (dev/??? LCA)
 ![Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
 
+Key components:  
+  * ```grader_center4```: (```autograde-makefile``` -> ```driver.sh``` -> ```grader_center4.py```) starting point of the python autograder
+    * adapter for ```runtest_tool.run_grader(...)```, i.e., prepare proper directive for both autolab run or local batch run and acts as autolab management (going through every student's submission) for local batch run
+  * ```runtest_tool.run_grader(...)```
+
 # Feb 26th, 2021. (dev/2021e)
 For LCA class (option: Grader = ```numtol2``` in ```ans.cfg```)
   * better handling a negative sign, i.e., ```- ###``` vs ```-###``` 
