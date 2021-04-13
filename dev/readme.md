@@ -13,10 +13,10 @@ Key components:
     * The policy ```external``` allows the entire process of run testing and grading to be passed on to the specified external policy, which can arbitrarily added. The ```graders.grading``` simply passes everything (necessary) to the external file through running arguments along with problem score and reporting mode. 
 
 Issues
-  * Clearly, ```graders.grading``` does very little: it just relays task to the real grading policy. This can put back into ```runtest_tool.run_grader```.
+  * Clearly, ```graders.grading``` does very little: it just relays task to the real grading policy. (I can get rid of ```graders.grading``` and move the relaying into ```runtest_tool.run_grader```.)
     * If policy is external, it takes an unnecessary route: ```runtest_tool.run_grader``` -->  ```graders.grading``` --> the external script
-    * It seems simpler just to have ```python3.5 extpolicy3.py ./cfg/ext2P9.cfg``` in the place of ```ans.cfg```'s Run and ```360``` in the place of Runtime.
-  * If have students submit their answers by tar, it should work. But, it is a little bit awkward. It may be nicer to have it in embed html, where a student can put his/her code directly on the web.
+    * It seems simpler just to have ```python3.5 extpolicy3.py ./cfg/ext2P9.cfg``` in the place of ```ans.cfg```'s Run and ```360``` in the place of Runtime. To accompany this, a new grading policy may forward the runtest output, which now is from extpolicy rather than student's code, to the score.
+  * If I have students submit their answers by tar, it should work. But, it is a little bit awkward. It may be nicer to have it in an embeded html, where a student can put his/her code directly on the web.
     * This raises another issue. Autolab embedded form gives out student's answer in a json text file. This json file has all answers. It is not like tar, which contains each file for each problem. This is one file has contents of every questions.
       * Option 1: forget efficiency. Put this one file to each iteration of ```runtest_tool.run_grader```
         * It may be ugly, but it will work and does not require much on fixing the code.
