@@ -23,10 +23,14 @@ It may look a bit longer in the cfg, but internally it works cleaner (in my opin
 Q1\; 60\; student.ans\; python3.5 extLCAjson1.py student.ans Q1 ./answers/Q1.ans 0.01 60 HidNum\; 30\; external-forward\; none\; HidNum\; dummy.txt dummy.txt
 ```
 Although this approach works, but it is a little bit inefficient, as it loads a json file and parses it every question. 
-It will be more efficient if we can load and parse a json file once and go over every answers in it. That's the another addition the ```json_grader```
+It will be more efficient if we can load and parse a json file once and go over every answers in it. That's the another addition, the ```json_grader```
   * Add ```json_grader``` for efficient parsing of json from an embedded form, along with modification to ```dispatcher.py``` to properly invoke ```json_grader``` for a json file from an embedded form or ```run_grader``` for a tar file
     * ```json_grader``` loads and parses a json file once, then goes over questions specified in the cfg.
   * Modify ```dispatcher.py``` to accommodate both ```json_grader``` and ```run_grader``` as well as having arguments: ```-autolab```, ```-verified```, and ```-json```
+    *  ```-autolab``` for running this ```dispatcher.py``` in the autolab server, i.e., student's submissions have been nicely put in folder ```student```
+      * if no ```-autolab```, ```dispatcher.py``` will run in a batch mode, i.e., taking a tar file from folder ```../tars``` one by one and grade each one with ```run_grader```
+    * ```-verified``` for identity verification, checking contents of student's ```verify.txt``` against what specified in ```codebook.txt```
+    * ```-json``` for an embedded form, ```dispatcher.py``` will invoke ```json_grader``` to handle the input
 
   * Change names:
     * ```grading_center4.py``` to ```dispatcher.py```
@@ -40,7 +44,7 @@ It will be more efficient if we can load and parse a json file once and go over 
   * 
 
 ## Intermediate stage
-![Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
+[Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
 
 Key components:  
   * ```grader_center4```: (```autograde-makefile``` -> ```driver.sh``` -> ```grader_center4.py```) starting point of the python autograder
