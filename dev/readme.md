@@ -48,6 +48,8 @@ Pressing needs that I have not addressed yet!
   * personalized grader, i.e., the answer for each problem does not have to be fixed. The question may be personalized to each student and the answer should be able to reflect that
     * along with this, I need a more efficient way for question delivery (a dynamic option, of course, where I can code to generate a question based on student's email) 
 
+![Autograder 2021f](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder2021f2.png)
+
 ## Intermediate stage
 [Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
 
