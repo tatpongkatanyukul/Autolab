@@ -1,4 +1,45 @@
-# Apr 13th, 2021. (dev/??? LCA)
+# Apr 16th, 2021. (dev/2021f)
+
+Major changes
+  * Get rid of unnecessary routing: ```autograde-makefile``` -> ```driver.sh``` -> ```grading_center4.py``` -> ```runtest_tools.py```
+    *  ```autograde-makefile``` -> ```dispatcher.py``` (adapted from ```grading_center4.py```) -> ```runtest_tools.py```
+    *  no ```driver.sh``` and the 2nd makefile anymore
+  * Add policy ```external-forward``` 
+    * so that instead of using ```external``` policy and put code into policy attributes, we can put code into the run field of the cfg directly
+    That is,
+    instead of
+```
+P108\; 60\; P108.cpp\;   \; 0\; external\; python3.5 extpolicy3.py ./cfg/ext2P108.cfg; 360\; HidNum\; 
+```
+    now we can do
+```
+P108\; 60\; P108.cpp\; python3.5 extpolicy3.py ./cfg/ext2P108.cfg 60 HidNum\; 360\; external-forward\; none\; HidNum\; dummy.txt dummy.txt
+```
+It may look a bit longer in the cfg, but internally it works cleaner (in my opinion). But, both external and external-forward are valid. So, use whichever style you like.
+  * Add policy ```extLCA1.py``` so that LCA-like answers in a tar file can be nicely graded with Peraphol's ```AutolabJudge```
+  * Add policy ```extLCAjson1.py``` so that LCA-line answers in a json file (from an embedded form) can be graded with Peraphol's ```AutolabJudge```. Also policy ```extLCAjson0.py``` using ```numtol2``` is added.
+    * This can work as an external policy (or external-forward policy), i.e., it can be configured as:
+```
+Q1\; 60\; student.ans\; python3.5 extLCAjson1.py student.ans Q1 ./answers/Q1.ans 0.01 60 HidNum\; 30\; external-forward\; none\; HidNum\; dummy.txt dummy.txt
+```
+Although this approach works, but it is a little bit inefficient, as it loads a json file and parses it every question. 
+It will be more efficient if we can load and parse a json file once and go over every answers in it. That's the another addition the ```json_grader```
+  * Add ```json_grader``` for efficient parsing of json from an embedded form, along with modification to ```dispatcher.py``` to properly invoke ```json_grader``` for a json file from an embedded form or ```run_grader``` for a tar file
+    * ```json_grader``` loads and parses a json file once, then goes over questions specified in the cfg.
+  * Modify ```dispatcher.py``` to accommodate both ```json_grader``` and ```run_grader``` as well as having arguments: ```-autolab```, ```-verified```, and ```-json```
+
+  * Change names:
+    * ```grading_center4.py``` to ```dispatcher.py```
+    * policy names
+      * ```Deploy``` to ```Silence```
+      * ```Test``` to ```Show``` 
+  * Integrate:
+    * ```graders.grading(...)``` into ```runtest_tools``` (no ```graders.py``` anymore) 
+  * Tidy up the starting makefile
+    * add ```> /dev/null``` to the end of ```tar xvf autograde.tar``` so that the feedback seems cleaner
+  * 
+
+## Intermediate stage
 ![Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
 
 Key components:  
