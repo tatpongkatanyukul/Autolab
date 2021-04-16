@@ -43,6 +43,11 @@ It will be more efficient if we can load and parse a json file once and go over 
     * add ```> /dev/null``` to the end of ```tar xvf autograde.tar``` so that the feedback seems cleaner
     * also, integrate what ```driver.sh``` and its makefile had done, so that I can tidy up the pipeline (get rid of ```driver.sh```)
 
+Pressing needs that I have not addressed yet!
+  * grader with hint, instead of telling score, give out some message
+  * personalized grader, i.e., the answer for each problem does not have to be fixed. The question may be personalized to each student and the answer should be able to reflect that
+    * along with this, I need a more efficient way for question delivery (a dynamic option, of course, where I can code to generate a question based on student's email) 
+
 ## Intermediate stage
 [Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
 
