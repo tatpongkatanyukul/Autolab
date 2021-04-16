@@ -41,7 +41,7 @@ It will be more efficient if we can load and parse a json file once and go over 
     * ```graders.grading(...)``` into ```runtest_tools``` (no ```graders.py``` anymore) 
   * Tidy up the starting makefile
     * add ```> /dev/null``` to the end of ```tar xvf autograde.tar``` so that the feedback seems cleaner
-  * 
+    * also, integrate what ```driver.sh``` and its makefile had done, so that I can tidy up the pipeline (get rid of ```driver.sh```)
 
 ## Intermediate stage
 [Autograder](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder.png)
