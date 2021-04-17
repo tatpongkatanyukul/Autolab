@@ -6,6 +6,23 @@ Key (intended) additions
   * add personalized post message feature, i.e., after grading student's submission, a grader give out a personalized message along with scores and other comments.
     * this personalized post message feature can be exploited as a primitive question delivery, where a post message could be a next question information
 
+## Design Dilemma
+### Premise
+  * grading policy: ```external``` leads to execution of a value of the cfg field ```GAttrib```
+    * ```P108b\; 60\; P108.cpp\;   \; 0\; external\; python3.5 extpolicy3.py ./cfg/ext2P108.cfg; 360\; HidNum\; ```
+    * note: the cfg 4th and 5th fields ```Run``` and ```Runtime``` are put a dummy ``` ```. If we need, we can put another code in.
+      * ```P1\; 60\; P1.cpp\; python3.5 test_submission.py ./info.txt P1.cpp \; 120\; external\; python3.5 extGrader.py ./cfg/extP1.cfg; 360\; HidNum\; ``` (```test_submission.py``` and ```extGrader.py``` are fictitious names)
+    * **caution!** 
+      * the cfg field ```GAttrib``` has 2 parts: <code to be run>;<max run time>
+      * <code to be run> is added with <score> and <reporting mode>, i.e., what will be executed is: <code to be run> <score> <mode>
+        * E.g., for GAttrib: ```python3.5 extGrader.py ./cfg/extP1.cfg; 360```, the code ```python3.5 extGrader.py ./cfg/extP1.cfg 60 HidNum``` will be executed. The score and reporting mode are attached automatically from the cfg 2nd and 8th fields, ```Points``` and ```Report```. 
+  * grading policy: ```external-forward``` just forward the output of the cfg field ```Run``` execution (along with feedback if ```mode != 'Silence'```)
+    * ```P1\; 60\; P1.cpp\; python3.5 test_and_grade_submission.py ./info.txt\; 360\; external-forward\; none\; HidNum\; dummy.txt dummy.txt``` (```test_and_grade_submission.py``` is a fictitious name)
+    * Unlike ```external```, the ```external-forward``` renders the cfg fields ```GAttrib``` irrelevant (completely ignored).
+ ### Discussion
+   * Logically, the cfg 4th field ```Run``` should be providing the submission output and the cfg 6th field ```Grader``` (along with ```GAttrib```) should compare the submission output against the reference output and decide the grade.
+   * In dynamic (personalized) question setting, the reference itself has to be dynamic
+
 # Apr 16th, 2021. (dev/2021f)
 
 **WARNING!** ```json_handler``` (option ```-json```) has not been tested yet
