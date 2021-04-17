@@ -1,5 +1,8 @@
 # Apr 16th, 2021. (dev/2021f)
 
+**WARNING!** ```json_handler``` (option ```-json```) has not been tested yet
+  * However, related external policies, e.g., ```extLCAjson0.py``` has been tested using ```run_grader``` (See dev/2021g for the latest development): tested by ```python dispatcher.py``` with cfg: ```Q4\; 60\; student.ans\; python3.5 extLCAjson0.py student.ans Q4 ./answers/Q4.ans 0.01 60 HidNum\; 30\; external-forward\; none\; HidNum\; dummy.txt dummy.txt```
+
 Major changes
   * Get rid of unnecessary routing: ```autograde-makefile``` -> ```driver.sh``` -> ```grading_center4.py``` -> ```runtest_tools.py```
     *  ```autograde-makefile``` -> ```dispatcher.py``` (adapted from ```grading_center4.py```) -> ```runtest_tools.py```
