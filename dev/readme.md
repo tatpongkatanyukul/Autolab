@@ -1,6 +1,8 @@
 # Apr 17th, 2021. (dev/2021g)
 Key (intended) additions
   * fix ```json_handler``` and its associcated codes, so that ```python dispatcher.py -autolab -json``` and ```python dispatcher.py -autolab -json -verified``` work
+    * Done! tested using ```python dispatcher.py "./cfg/eval2021g.cfg" -autolab -json````
+    with cfg = ```Q1\; 60\; student.json\; dummy \; 0\; numtol2\; 0.01\; HidNum\; dummy.txt Q1.ans``` 
   * add personalized grading policy, i.e., given a student's email (obtained from ```settings.json```), grader selects an associated reference text to compare against.
     * this allows a personalized exercise, where a student gets one's own questions different from other students and one's answers are graded accordingly.
   * add personalized post message feature, i.e., after grading student's submission, a grader give out a personalized message along with scores and other comments.
