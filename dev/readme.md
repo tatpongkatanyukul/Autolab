@@ -21,6 +21,8 @@ Key (intended) additions
     * Unlike ```external```, the ```external-forward``` renders the cfg fields ```GAttrib``` irrelevant (completely ignored).
  ### Discussion
    * Logically, the cfg 4th field ```Run``` should be providing the submission output and the cfg 6th field ```Grader``` (along with ```GAttrib```) should compare the submission output against the reference output and decide the grade.
+     * So far, ```external-forward``` is slack on this and combine both obtaining submission output and grading output conferring with reference into a single run, e.g., ```extpolicy3.py```, ```extLCA1.py```, and ```extLCAjson0```.
+     * ```external``` policy itself does not really violate this logic, but the way I use it, i.e., with ```extpolicy3.py```, ```extLCA1.py```, and ```extLCAjson0```, is combining both tasks into one single run, e.g., ```extpolicy3.py``` does everything inc. obtaining submission output, loading reference, and exploying ```numtol_policy2``` for grading.
    * In dynamic (personalized) question setting, the reference itself has to be dynamic
 
 # Apr 16th, 2021. (dev/2021f)
