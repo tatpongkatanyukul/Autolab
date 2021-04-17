@@ -1,3 +1,11 @@
+# Apr 17th, 2021. (dev/2021g)
+Key (intended) additions
+  * fix ```json_handler``` and its associcated codes, so that ```python dispatcher.py -autolab -json``` and ```python dispatcher.py -autolab -json -verified``` work
+  * add personalized grading policy, i.e., given a student's email (obtained from ```settings.json```), grader selects an associated reference text to compare against.
+    * this allows a personalized exercise, where a student gets one's own questions different from other students and one's answers are graded accordingly.
+  * add personalized post message feature, i.e., after grading student's submission, a grader give out a personalized message along with scores and other comments.
+    * this personalized post message feature can be exploited as a primitive question delivery, where a post message could be a next question information
+
 # Apr 16th, 2021. (dev/2021f)
 
 **WARNING!** ```json_handler``` (option ```-json```) has not been tested yet
