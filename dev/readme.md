@@ -13,8 +13,8 @@ Key (intended) additions
     * note: the cfg 4th and 5th fields ```Run``` and ```Runtime``` are put a dummy ``` ```. If we need, we can put another code in.
       * ```P1\; 60\; P1.cpp\; python3.5 test_submission.py ./info.txt P1.cpp \; 120\; external\; python3.5 extGrader.py ./cfg/extP1.cfg; 360\; HidNum\; ``` (```test_submission.py``` and ```extGrader.py``` are fictitious names)
     * **caution!** 
-      * the cfg field ```GAttrib``` has 2 parts: [**code to be run**];[**max run time**]
-      * [**code to be run**]> is added with [**score**] and [**reporting mode**], i.e., what will be executed is: [**code to be run**] [**score**] [**reporting mode**]
+      * the cfg field ```GAttrib``` has 2 parts: [_code to be run_];[_max run time_]
+      * [_code to be run_] is added with [_score_] and [_reporting mode_], i.e., what will be executed is: [_code to be run_] [_score_] [_reporting mode_]
         * E.g., for GAttrib: ```python3.5 extGrader.py ./cfg/extP1.cfg; 360```, the code ```python3.5 extGrader.py ./cfg/extP1.cfg 60 HidNum``` will be executed. The score and reporting mode are attached automatically from the cfg 2nd and 8th fields, ```Points``` and ```Report```. 
   * grading policy: ```external-forward``` just forward the output of the cfg field ```Run``` execution (along with feedback if ```mode != 'Silence'```)
     * ```P1\; 60\; P1.cpp\; python3.5 test_and_grade_submission.py ./info.txt\; 360\; external-forward\; none\; HidNum\; dummy.txt dummy.txt``` (```test_and_grade_submission.py``` is a fictitious name)
