@@ -2,8 +2,9 @@
 
 * [Autograder2021g](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder2021gA5Q2.tar)
   * Dynamic Grading and dynamic post-grading messaging (used as a primitive dynamic question delivery)
-  * Use in A5Q1 (dynamic post messaging) and A5Q2 (both dynamic grading and post messaging)
-  * Key components: ```extDynamicGrader1.py``` (with little help from ```misc_tools.py```)
+    * Use in A5Q1 (dynamic post messaging) and A5Q2 (both dynamic grading and post messaging)
+    * Key components: ```extDynamicGrader1.py``` (with little help from ```misc_tools.py```)
+  * Also, nicer display ```extpolicy4.py``` adapted from ```extpolicy3.py``` to prefix each line of its delegated program (making it easier to read, see output from ```numtol_policy2```) and options to show pre-run and post-run details even when there is no error (perhaps, not much use for now).
 
 ![LCA2021 A5Q1 Scenario]
 
