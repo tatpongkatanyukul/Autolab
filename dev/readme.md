@@ -10,13 +10,17 @@
 
 ![Overview](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder2021g.png)
 
-![LCA2021 A5Q1 Scenario]
+![Python Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioPython.png)
 
-![LCA2021 A5Q2 Scenario]
+![Identity Verification](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioVerify.png)
 
-![CPG2021 M002 Function Scenario]
+![C++ Function  CPG2021 M002 Function Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioCPPFunctions.png)
 
-![CPG2021 M002 File IO Scenario]
+![Dynamic Messaging LCA2021 A5Q1 Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioDynamicMsg.png)
+
+![Dynamic Grading LCA2021 A5Q2 Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioDynamicGrading.png)
+
+
 
 
 ***WARNING!!!***
