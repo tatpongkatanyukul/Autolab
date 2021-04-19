@@ -1,4 +1,18 @@
-# Apr 17th, 2021. (dev/2021g)
+# Apr 19th, 2021. (dev/2021g)
+
+* [Autograder2021g](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder2021gA5Q2.tar)
+  * Dynamic Grading and dynamic post-grading messaging (used as a primitive dynamic question delivery)
+  * Use in A5Q1 (dynamic post messaging) and A5Q2 (both dynamic grading and post messaging)
+  * Key components: ```extDynamicGrader1.py``` (with little help from ```misc_tools.py```)
+
+![LCA2021 A5Q1 Scenario]
+
+![LCA2021 A5Q2 Scenario]
+
+![CPG2021 M002 Function Scenario]
+
+![CPG2021 M002 File IO Scenario]
+
 
 ***WARNING!!!***
   * ```AutolabJudge``` and its related policies, e.g., ```extLCA1```, ```extLCAjson1```, should be used with extreme ***caution***, since  ```AutolabJudge``` has been found to have an issue with tolerance in its "equation" mode (including anything with function, e.g., ```Q2.1: -10 + Vx - 100 ix = 0```, ```Q2.2: v(t) = -10 exp( -500 t) + 30```, ```Q2.3. i(t) = 0.01 cos( 677 t + 1.57 )```, and ```Q2.4. Vx = 3 angle 1.57```).
