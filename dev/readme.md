@@ -20,7 +20,7 @@
 ![Identity Verification](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioVerify.png)
 
 ### C++
-![C++ Function  CPG2021 M002 Function Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioCPPFunctions.png)
+![C++ Function  CPG2021 M002 Function Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioExternalCPPFunctions.png)
 
 ### Dynamic Messaging
 ![Dynamic Messaging LCA2021 A5Q1 Scenario](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/ScenarioDynamicMsg.png)
