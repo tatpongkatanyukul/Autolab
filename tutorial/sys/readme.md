@@ -24,7 +24,7 @@
 ## Trace code
 
 ### Autolab
-It looks like that the starting point is ```/home/autolab/Autolab/runrail.sh```
+(1) The starting point is ```/home/autolab/Autolab/runrail.sh```
 Contents of ```runrail.sh```
 ```
 #!/usr/bin/env bash
@@ -33,6 +33,28 @@ RAILS_ENV=development bundle exec rails s -p 3000 -e development --binding=local
 Note: ```rails s``` or ```rails server``` is a command to start rails server.
 
 See [Rails initialization for sequence of codes get run](https://guides.rubyonrails.org/initialization.html)
+
+(2) At some point along with rails initialization, it will get to ```config/application.rb```
+Part of the contents of ```application.rb```
+```
+module Autolab3
+  class Application < Rails::Application
+    config.to_prepare do
+      Devise::ConfirmationsController.skip_before_action :set_course
+      Devise::ConfirmationsController.skip_before_action :authorize_user_for_course
+      Devise::ConfirmationsController.skip_before_action :authenticate_for_action
+      Devise::ConfirmationsController.skip_before_action :update_persistent_announcements
+        :              :                    :                    :
+      Devise::SessionsController.layout "home"
+      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application"   : "h$
+      Devise::ConfirmationsController.layout "home"
+      Devise::UnlocksController.layout "home"
+      Devise::PasswordsController.layout "home"
+      Doorkeeper::AuthorizationsController.layout "home"
+      Doorkeeper::AuthorizedApplicationsController.layout "home"
+    end        
+```
+
 
 ### Autograder 
 See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
