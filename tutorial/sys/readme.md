@@ -21,7 +21,14 @@
   * 3. Check resource usage in the server
     * ```htop```
   * 4. Trace code
-    * See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
+    * Autolab: ```/home/autolab/Autolab/runrail.sh```
+    Contents of ```runrail.sh```
+    ```
+#!/usr/bin/env bash
+RAILS_ENV=development bundle exec rails s -p 3000 -e development --binding=localhost${_reset}
+    ```
+    * Autograder 
+      * See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
     
 ![Autolab](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/Autolab_system.png)  
   
