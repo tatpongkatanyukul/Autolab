@@ -24,12 +24,13 @@
 ## Trace code
 
 ### Autolab
-It looks like that the starting point is ```/home/autolab/Autolab/runrail.sh``` (need Aj Wasu's confirmation)
+It looks like that the starting point is ```/home/autolab/Autolab/runrail.sh```
 Contents of ```runrail.sh```
 ```
 #!/usr/bin/env bash
 RAILS_ENV=development bundle exec rails s -p 3000 -e development --binding=localhost${_reset}
 ```
+Note: ```rails s``` or ```rails server``` is a command to start rails server.
 
 ### Autograder 
 See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
