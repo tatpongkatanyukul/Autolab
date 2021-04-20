@@ -12,3 +12,9 @@ These will be copied over to the running container, which Makefile will be the s
 ## Autograder
 
   * [Latest Autograder](https://github.com/tatpongkatanyukul/Autolab/tree/main/dev/readme.md)
+
+## Server
+  * [Autolab server](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/readme.md)
+
+## Tutorial
+  * [Tutorial](https://github.com/tatpongkatanyukul/Autolab/tree/main/tutorial/readme.md)
