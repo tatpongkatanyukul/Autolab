@@ -20,14 +20,18 @@
       * E.g., ```systemctl restart Tango3-Server```
   * 3. Check resource usage in the server
     * ```htop```
-  * 4. Trace code
-Autolab: ```/home/autolab/Autolab/runrail.sh``` (need Aj Wasu's confirmation)
+
+## Trace code
+
+### Autolab
+It looks like that the starting point is ```/home/autolab/Autolab/runrail.sh``` (need Aj Wasu's confirmation)
 Contents of ```runrail.sh```
 ```
 #!/usr/bin/env bash
 RAILS_ENV=development bundle exec rails s -p 3000 -e development --binding=localhost${_reset}
 ```
-Autograder 
+
+### Autograder 
 See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
     
 ![Autolab](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/Autolab_system.png)  
