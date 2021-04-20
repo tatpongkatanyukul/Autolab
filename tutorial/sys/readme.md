@@ -32,6 +32,8 @@ RAILS_ENV=development bundle exec rails s -p 3000 -e development --binding=local
 ```
 Note: ```rails s``` or ```rails server``` is a command to start rails server.
 
+See [Rails initialization for sequence of codes get run](https://guides.rubyonrails.org/initialization.html)
+
 ### Autograder 
 See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
     
