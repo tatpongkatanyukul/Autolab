@@ -1,3 +1,10 @@
+# Apr 21st, 2021. (dev/2021h)
+  * fix dev/2021g on ```numgraders.is_number``` (fix regular expression to differentiate "2" and "2.0" from "2.")
+    * before: ```line 2``` will be matched to ```line 2.``` (Actually, it's not that bad)
+    * after: ```line 2``` will be caught that it misses period at the end. 
+  * enable integrity declaration in Thai (working on it)
+  * enable post-message scheme based on score (working on it)
+
 # Apr 19th, 2021. (dev/2021g)
 
 * [Autograder2021g](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder2021gA5Q2.tar)
