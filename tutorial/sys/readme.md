@@ -61,3 +61,6 @@ See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/
     
 ![Autolab](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/Autolab_system.png)  
   
+## Web Server (NginX)
+  * type ```nginx -V``` to see configuration
+    *  found ```/usr/share/nginx/html/index.html```, but it is not what is shown on the default ip ```http://202.28.93.227/```
