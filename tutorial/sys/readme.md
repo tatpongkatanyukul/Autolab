@@ -67,3 +67,5 @@ See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/
     *  found ```/usr/share/nginx/html/index.html```, but it is not what is shown on the default ip ```http://202.28.93.227/```
     *  found ```root /home/admin/Autolab/public``` on ```/etc/nginx/sites-available/autolab```
     *  found ```root /home/autolab/Autolab/public``` on ```/etc/nginx/sites-available/default```
+  * I see, Nginx is not a file-based system, like Apache. It processes [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
+    * So, I may not see a html like I was expecting in the beginning. 
