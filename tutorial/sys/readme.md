@@ -55,6 +55,7 @@ module Autolab3
     end        
 ```
 
+(3) ruby: ```/home/autolab/.rbenv/versions/2.6.1/bin/ruby```
 
 ### Autograder 
 See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/tango.py```
