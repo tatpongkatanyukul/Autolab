@@ -64,4 +64,5 @@ See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/
 ## Web Server (NginX)
   * type ```nginx -V``` to see configuration
     *  found ```/usr/share/nginx/html/index.html```, but it is not what is shown on the default ip ```http://202.28.93.227/```
-    *  found ```root /home/admin/Autolab/public``` on ```:/etc/nginx/sites-available/autolab```
+    *  found ```root /home/admin/Autolab/public``` on ```/etc/nginx/sites-available/autolab```
+    *  found ```root /home/autolab/Autolab/public``` on ```/etc/nginx/sites-available/default```
