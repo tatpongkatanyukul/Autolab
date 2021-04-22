@@ -2,8 +2,20 @@
   * fix dev/2021g on ```numgraders.is_number``` (fix regular expression to differentiate "2" and "2.0" from "2.")
     * before: ```line 2``` will be matched to ```line 2.``` (Actually, it's not that bad)
     * after: ```line 2``` will be caught that it misses period at the end. 
-  * enable integrity declaration in Thai (working on it)
-  * enable post-message scheme based on score (working on it)
+  * enable post-message scheme based on score: ```extDynamicGrader2.py```
+    * specify in its json cfg key: ```"make-post-msg"```
+      * "no": post-message = "",
+      * "yes": post-message is made according to a lookup file and a selector key,
+      * "conditional": when CONDITION is met, a post-message is made (a/t lookup and selector). The CONDITION is specified with key "condition" in the cfg file. 
+        * Key ```"condition"```: 
+          * ["lt", threshold] means that score < threshold, e.g., "condition": ["lt", 30], show when score < 30.
+          * ["gt", threshold] means that score > threshold, e.g., "condition": ["gt", 50], show when score > 60.
+          * ["eq", threshold] means that score == threshold, e.g., "condition": ["eg", 0], show when score == 0.
+          * Default (when there is no key "condition") is to show when score > 0, i.e., "condition": ["gt", 0]
+    
+  * (WORKING ON) a custom external policy: ```extCustomJsonTE1.py```
+    * This is customized to LCA2021 FE0 for Thai and English Integrity Declaration 
+    * It reads json, gets both Thai and English texts, compares Thai text against reference, then check the English one. If both are fine, show the dynamic message.
 
 # Apr 19th, 2021. (dev/2021g)
 
