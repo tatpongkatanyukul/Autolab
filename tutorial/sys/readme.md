@@ -30,7 +30,10 @@ Contents of ```runrail.sh```
 #!/usr/bin/env bash
 RAILS_ENV=development bundle exec rails s -p 3000 -e development --binding=localhost${_reset}
 ```
-Note: ```rails s``` or ```rails server``` is a command to start rails server.
+Explanation
+  * ```rails s``` or ```rails server``` is a command to start rails server.
+  * ```-p 3000``` is to specify port to 3000.
+    * if tested on a localhost, check out url: ```localhost:port```, e.g., ```localhost:3000``` 
 
 See [Rails initialization for sequence of codes get run](https://guides.rubyonrails.org/initialization.html)
 
@@ -54,6 +57,9 @@ module Autolab3
       Doorkeeper::AuthorizedApplicationsController.layout "home"
     end        
 ```
+Key modules
+  * 
+
 
 (3) ruby: ```/home/autolab/.rbenv/versions/2.6.1/bin/ruby```
 
