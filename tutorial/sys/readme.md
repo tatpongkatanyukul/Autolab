@@ -34,6 +34,7 @@ Explanation
   * ```rails s``` or ```rails server``` is a command to start rails server.
   * ```-p 3000``` is to specify port to 3000.
     * if tested on a localhost, check out url: ```localhost:port```, e.g., ```localhost:3000``` 
+    * default account for development version: ```admin@foo.bar```
 
 See [Rails initialization for sequence of codes get run](https://guides.rubyonrails.org/initialization.html)
 
@@ -58,8 +59,15 @@ module Autolab3
     end        
 ```
 Key modules
-  * 
-
+  * ```config/application.rb```
+  * ```config/routes.rb```
+    * get
+    * post
+    * match
+  * ```app/controllers/assessments_controller.rb```
+    * see e.g., ```def index```
+  * easy to start with: ```app/controllers/announcement_controller.rb```
+    * also check out ```index.html.erb``` (template) and ```_announcementFields.html.erb``` 
 
 (3) ruby: ```/home/autolab/.rbenv/versions/2.6.1/bin/ruby```
 
