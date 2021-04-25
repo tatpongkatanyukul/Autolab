@@ -17,9 +17,14 @@
           * Default (when there is no key "condition") is to show when score > 0, i.e., 
           ```"condition": ["gt", 0]```
     
-  * (WORKING ON) a custom external policy: ```extCustomJsonTE1.py```
+  * a custom external policy: ```extCustomJsonTE1.py```
     * This is customized to LCA2021 FE0 for Thai and English Integrity Declaration 
     * It reads json, gets both Thai and English texts, compares Thai text against reference, then check the English one. If both are fine, show the dynamic message.
+  * fix -verified, so that both ```runtest_tool.run_grader``` and ```runtest_tool.json_grader``` can do personal code verification.
+    * codebook: ```codebook.csv```
+    * student's code
+      *  must be put in ```verify.json``` when run in ```multiple``` input mode (without ```-json```, run ```runtest_tool.run_grader```)
+      *  must be filled in a textarea (or input) with id ```checkcode``` when run in ```json``` ((with ```-json```, run ```runtest_tool.json_grader```)
 
 # Apr 19th, 2021. (dev/2021g)
 
