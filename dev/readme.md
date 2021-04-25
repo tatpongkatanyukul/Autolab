@@ -19,7 +19,7 @@
     
   * a custom external policy: ```extCustomJsonTE1.py```
     * This is customized to LCA2021 FE0 for Thai and English Integrity Declaration 
-    * It reads json, gets both Thai and English texts, compares Thai text against reference, then check the English one. If both are fine, show the dynamic message.
+    * It reads json, gets both Thai and English texts, compares Thai text against reference, then check the English one. It adds both Thai and English scores together, show the dynamic message on condition. (It is flexible so that I can choose either to have them both correct (i.e., condition: ["gt", 1]) or to have one of them correct (i.e., condition: ["gt", 0]).
   * fix handling ```-verified```, so that both ```runtest_tool.run_grader``` and ```runtest_tool.json_grader``` can do personal code verification.
     * codebook: ```codebook.csv```
     * student's code
