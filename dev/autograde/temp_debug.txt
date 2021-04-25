@@ -1,0 +1,1 @@
+{'score': '10', 'policy': 'extpolicy1.py', 'log': 'log.txt', 'config': './answer/testP1.cfg', 'student': 'P1.cpp', 'problem': 'P1', 'mode': 'Test'}

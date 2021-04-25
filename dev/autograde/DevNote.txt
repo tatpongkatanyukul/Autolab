@@ -1,0 +1,6 @@
+Feb 4th, 2021.
+Ideas:
+* change ans.cfg to autograder_cfg.json
+	* pro: maximum flexibility and convenience (using json library)
+	* con: editing json is cumbersome vs editing a tabular format
+	* my call (Feb 4th, 2021): put 'external' for policy and use json only when needed
