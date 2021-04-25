@@ -27,7 +27,8 @@
         * verification has been moved from ```dispatcher.py``` to ```runtest_tool.py```  
       *  must be filled in a textarea (or input) with id ```checkcode``` when run in ```json``` ((with ```-json```, run ```runtest_tool.json_grader```)
   * fix ```runtest_tool.get_Grading_Table``` to allow more flexible writing on the main evaluation cfg.
-
+  * remove policy ```external-forward```, since it does not seem to do anything ```external``` cannot except allow the evaluation code to be put in the cfg main run field. 
+  * 
 # Apr 19th, 2021. (dev/2021g)
 
 * [Autograder2021g](https://github.com/tatpongkatanyukul/Autolab/raw/main/dev/autograder2021gA5Q2.tar)
