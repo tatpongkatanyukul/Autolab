@@ -2,7 +2,7 @@
   * fix dev/2021g on ```numgraders.is_number``` (fix regular expression to differentiate "2" and "2.0" from "2.")
     * before: ```line 2``` will be matched to ```line 2.``` (Actually, it's not that bad)
     * after: ```line 2``` will be caught that it misses period at the end. 
-  * enable post-message scheme based on score: ```extDynamicGrader2.py```
+  * enable post-message scheme based on score: ```extDynamicGrader3.py``` (adapted from ```extDynamicGrader2.py``` to have a cleaner ```makeandgrade```)
     * specify in its json cfg key: ```"make-post-msg"```
       * "no": post-message = "",
       * "yes": post-message is made according to a lookup file and a selector key,
@@ -20,11 +20,13 @@
   * a custom external policy: ```extCustomJsonTE1.py```
     * This is customized to LCA2021 FE0 for Thai and English Integrity Declaration 
     * It reads json, gets both Thai and English texts, compares Thai text against reference, then check the English one. If both are fine, show the dynamic message.
-  * fix -verified, so that both ```runtest_tool.run_grader``` and ```runtest_tool.json_grader``` can do personal code verification.
+  * fix handling ```-verified```, so that both ```runtest_tool.run_grader``` and ```runtest_tool.json_grader``` can do personal code verification.
     * codebook: ```codebook.csv```
     * student's code
       *  must be put in ```verify.json``` when run in ```multiple``` input mode (without ```-json```, run ```runtest_tool.run_grader```)
+        * verification has been moved from ```dispatcher.py``` to ```runtest_tool.py```  
       *  must be filled in a textarea (or input) with id ```checkcode``` when run in ```json``` ((with ```-json```, run ```runtest_tool.json_grader```)
+  * fix ```runtest_tool.get_Grading_Table``` to allow more flexible writing on the main evaluation cfg.
 
 # Apr 19th, 2021. (dev/2021g)
 
