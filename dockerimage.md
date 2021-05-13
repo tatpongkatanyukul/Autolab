@@ -6,4 +6,7 @@
 
 # Installing programs
   * ```apt install``` is very handy
-  * ```python3.9 -m pip``` when ```pip``` does not work (for the right python version.
+  * ```python3.9 -m pip``` when ```pip``` does not work (for the right python version.)
+  
+# Fix image to have ```python``` for any version
+https://hackersandslackers.com/multiple-versions-python-ubuntu/ 
