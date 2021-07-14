@@ -76,6 +76,16 @@ See ```/home/autolab/Tango3/restful-tango/server``` and ```/home/autolab/Tango3/
     
 ![Autolab](https://github.com/tatpongkatanyukul/Autolab/blob/main/tutorial/sys/Autolab_system.png)  
   
+#### Test autograder on the server
+  * 1 ssh (putty) into the autolab
+  * 2 sftp (filezilla) into the autolab
+  * 3 transfer files in to ```sandbox/<folder>```
+  * 4 start docker ```docker run -v /home/tatpong/sandbox:/home/sandbox -it python39_image bash```
+  * 5 go into ```sandbox/<folder>``` and extract the package
+  * 6 try ```python3.9 dispatcher.py "./cfg/eval2021h.cfg" -autolab```
+    * If it works, nothing's wrong with the autograder code. Check Tango (restart, maybe?)
+    * If it does not work, fix it! 
+  
 ## Web Server (NginX)
   * type ```nginx -V``` to see configuration
     *  found ```/usr/share/nginx/html/index.html```, but it is not what is shown on the default ip ```http://202.28.93.227/```
